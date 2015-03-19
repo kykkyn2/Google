@@ -1,0 +1,67 @@
+.select-page {
+  padding-top: 270px;
+  margin: 0 auto;
+  width: 900px;
+  text-align: center;
+}
+.select-page h1 {
+  margin-bottom: 10px;
+}
+.select-page p {
+  width: 471px;
+  height: 132px;
+  background: url("../images/heading-message.png") 0 0 no-repeat;
+  text-indent: -999em;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.select-page ul {
+  padding-bottom: 220px;
+}
+.select-page ul:after, .select-page ul:before {
+  content: "";
+  display: table;
+}
+.select-page ul:after {
+  clear: both;
+}
+.select-page li {
+  float: left;
+  padding-left: 25px;
+  font-size: 15px;
+}
+.select-page li a {
+  color: #404040;
+  letter-spacing: -0.3px;
+}
+.select-page li:first-child {
+  padding-left: 0;
+}
+.select-page li i {
+  width: 155px;
+  height: 155px;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.select-page .select-adwitt i {
+  background: #f2f2f2 url("../images/list-adwitt.png") 50% 50% no-repeat;
+}
+.select-page .select-cafe24 i {
+  background: #f2f2f2 url("../images/list-cafe24.png") 50% 50% no-repeat;
+}
+.select-page .select-facebook i {
+  background: #f2f2f2 url("../images/list-facebook.png") 50% 50% no-repeat;
+}
+.select-page .select-bus-manager i {
+  background: #f2f2f2 url("../images/list-bus-manager.png") 50% 50% no-repeat;
+}
+.select-page .select-kakao i {
+  background: #f2f2f2 url("../images/list-kakao.png") 50% 50% no-repeat;
+}
+.select-page .select-insta i {
+  background: #f2f2f2 url("../images/insta_icon.png") 50% 50% no-repeat;
+}
+
+
+/*# sourceMappingURL=indexstyle.css.map */
