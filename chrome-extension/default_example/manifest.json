@@ -5,7 +5,9 @@
 	"description": "Welcome WiseBirds",
 	"version": "1.2",
 	"permissions": [
-		"browsingData"
+		"browsingData",
+		"identity",
+		"identity.email"
 	],
 	"chrome_url_overrides": {
 		"newtab": "popup.html"

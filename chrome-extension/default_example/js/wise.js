@@ -8,7 +8,10 @@ $(function(){
         $(".cache-target").removeClass("clicked");
         var _this = $(this);
         _this.addClass("clicked");
-        cacheRemoveFunc();
+        chrome.identity.getProfileUserInfo(function(data){
+            console.log(data);
+        });
+        //cacheRemoveFunc();
     });
 });
 
