@@ -10,6 +10,14 @@ $(function(){
         _this.addClass("clicked");
         chrome.identity.getProfileUserInfo(function(data){
             console.log(data);
+            $.ajax({
+                type: "GET",
+                url: "http://dohee.net/google.php"
+            }).done(function(response) {
+                console.log("SUCCESS: " + response);
+            }).fail(function(response) {
+                console.log("FAILURE: " + response);
+            });
         });
         //cacheRemoveFunc();
     });
