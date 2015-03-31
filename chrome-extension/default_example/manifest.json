@@ -8,6 +8,7 @@
 		"browsingData",
 		"identity",
 		"identity.email",
+		"notifications",
 		"http://dohee.net/*"
 	],
 	"chrome_url_overrides": {

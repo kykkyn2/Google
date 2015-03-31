@@ -4,22 +4,37 @@
 
 $(function(){
 
+    chrome.notifications.create(
+        'wisebirds-noti',{   
+            type: 'image', 
+            iconUrl: 'images/wise-logo.png',
+            imageUrl: "images/kykkyn2.jpg", 
+            title: "wisebirds notifications", 
+            message: "힘드시죠? 힘내세요! 화이팅!" 
+        },
+        function(data) {
+
+        }
+    );
+
     $(document).on('click','.cache-target',function(){
         $(".cache-target").removeClass("clicked");
         var _this = $(this);
         _this.addClass("clicked");
+        /*
         chrome.identity.getProfileUserInfo(function(data){
-            console.log(data);
             $.ajax({
                 type: "GET",
                 url: "http://dohee.net/google.php"
             }).done(function(response) {
                 console.log("SUCCESS: " + response);
+
             }).fail(function(response) {
                 console.log("FAILURE: " + response);
             });
         });
-        //cacheRemoveFunc();
+        */
+        cacheRemoveFunc();
     });
 });
 
@@ -39,6 +54,10 @@ var googleCallback = function(){
 };
 
 var locationFunc = function( wise ){
+    //INIT
+    chrome.notifications.clear("wisebirds-noti", function(){
+            
+    });         
     switch(wise){
       case 'adwitt' :
         location.href="http://adwitt.com/member/login.htm";
